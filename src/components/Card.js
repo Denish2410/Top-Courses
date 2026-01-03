@@ -21,7 +21,7 @@ const Card=({course, likedCourses, setLikedCourses})=>{
     return(
         <div className="w-[300px] bg-bgDark bg-opacity-80 rounded-md overflow-hidden">
             <div className="relative">
-                <img src={course.image.url}></img>
+                <img src={course.image} alt={course.title || "Course image"} />
 
                 <div className="w-[35px] h-[35px] bg-white rounded-full absolute right-2 bottom-[-15px] grid place-items-center">
                     <button onClick={clickHandler}> 
